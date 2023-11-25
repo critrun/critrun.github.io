@@ -2,7 +2,7 @@ body {
     background-color: #000000;
     background-image: url("images/bg.jpg");
     /*background-size: cover;*/
-    background-size: clamp(1000px, 100%, 1500px) auto;
+    background-size: clamp(1000px, 100%, 99999px) auto;
     background-repeat: no-repeat;
     background-position: 50% 20%;
   }
