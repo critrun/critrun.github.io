@@ -1,10 +1,5 @@
 body {
-    background-color: #000000;
-    background-image: url("images/bg.jpg");
-    /*background-size: cover;*/
-    background-size: clamp(1000px, 100%, 99999px) auto;
-    background-repeat: no-repeat;
-    background-position: 50% 20%;
+    background-color: #1d1e22;
   }
 
 h1 {
@@ -39,13 +34,42 @@ a {
     
 }
 
+#sidelamp {
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.623);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.021);
+    background-image: url("images/bg.webp");
+    background-size: cover;
+}
+
+#parallax {
+    margin: 0;
+    position: relative;
+    background-image: url("images/bg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 50%;
+    background-size: auto 110%;
+    width: auto;
+    height: auto;
+    border-radius: 25px;
+}
+
+#mover {
+    margin: 0;
+    position: fixed;
+    top: 0vh;
+    left: 0vw;
+    width: 100vw;
+    height: 100vh;
+}
+
 .sortbox {
     width:0%;
     position: absolute;
     width: clamp(300px, 50%, 400px);
     top: 15%;
     left: calc(50% - clamp(300px, 50%, 400px)/2);
-    background-color: #ff000000;
 }
 
 .roundbox {
@@ -56,15 +80,13 @@ a {
     background-color: #0000007e;
     border-radius: 25px;
     backdrop-filter: blur(5px);
-    /*position: absolute;
-    top: 15%;
-    left: calc(50% - clamp(300px, 50%, 400px)/2);*/
+    box-shadow: 0px -10px 7px -8px rgba(1, 18, 29, 0.671);
 }
 
 .button {
-    background-color: rgba(142, 117, 209, 0.5); /* Green */
+    background-color: rgba(106, 176, 255, 0.253); /* Green */
     border: none;
-    color:#f0f8ff;
+    color:#b0cdd8;
     padding: 8px 10px;
     width: 100%;
     height: 35px;
@@ -77,21 +99,25 @@ a {
     border-radius: 17.5px;
     transition-duration: 0.4s;
     margin-top: 5px;
+    z-index: 100;
 }
 
 .button:hover {
-    background-color: rgba(142, 117, 209, 1.0);
+    background-color: rgba(15, 23, 32, 0);
     color: white;
+    text-shadow: 0px 0px 3px white;
+    box-shadow: inset 0px 0px 10px 2px rgba(255, 255, 255, 0.103), 0px 0px 5px rgba(255, 255, 255, 0.164);
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 img {
     border-radius: 100%;
     border: 2px solid #f0f8ff;
     height: 64px;
-  }
+}
 
-.mastodon {
-    background: url('icons/mastodon.svg');
+i {
     height: 100%;
     aspect-ratio: 1/1;
     display:inline-block;
@@ -100,52 +126,29 @@ img {
     margin-bottom: auto;
     vertical-align:middle;
     filter: invert(91%) sepia(55%) saturate(3255%) hue-rotate(178deg) brightness(112%) contrast(101%);
+    transition-duration: 0.4s;
+}
+
+.button:hover i {
+    filter: invert(91%) sepia(55%) saturate(3255%) hue-rotate(178deg) brightness(112%) contrast(101%) drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.418));
+}
+
+.mastodon {
+    background: url('icons/mastodon.svg');
 }
 
 .kofi {
     background: url('icons/kofi.svg');
-    height: 100%;
-    aspect-ratio: 1/1;
-    display:inline-block;
-    margin-right: 5px;
-    margin-top: auto;
-    margin-bottom: auto;
-    vertical-align:middle;
-    filter: invert(91%) sepia(55%) saturate(3255%) hue-rotate(178deg) brightness(112%) contrast(101%);
 }
 
 .linkedin {
     background: url('icons/linkedin.svg');
-    height: 100%;
-    aspect-ratio: 1/1;
-    display:inline-block;
-    margin-right: 5px;
-    margin-top: auto;
-    margin-bottom: auto;
-    vertical-align:middle;
-    filter: invert(91%) sepia(55%) saturate(3255%) hue-rotate(178deg) brightness(112%) contrast(101%);
 }
 
 .github {
     background: url('icons/github.svg');
-    height: 100%;
-    aspect-ratio: 1/1;
-    display:inline-block;
-    margin-right: 5px;
-    margin-top: auto;
-    margin-bottom: auto;
-    vertical-align:middle;
-    filter: invert(91%) sepia(55%) saturate(3255%) hue-rotate(178deg) brightness(112%) contrast(101%);
 }
 
 .steam {
     background: url('icons/steam.svg');
-    height: 100%;
-    aspect-ratio: 1/1;
-    display:inline-block;
-    margin-right: 5px;
-    margin-top: auto;
-    margin-bottom: auto;
-    vertical-align:middle;
-    filter: invert(91%) sepia(55%) saturate(3255%) hue-rotate(178deg) brightness(112%) contrast(101%);
 }
