@@ -38,14 +38,14 @@ a {
     box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.623);
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.021);
-    background-image: url("images/bg.webp");
+    background-image: url("images/bg-lq.webp");
     background-size: cover;
 }
 
 #parallax {
     margin: 0;
     position: relative;
-    background-image: url("images/bg.webp");
+    background-image: url("images/bg-lq.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-position: 50% 50%;
