@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <link rel="stylesheet" href="styles.css">
         <title>crit's crib</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <a rel="me" href="https://toot.community/@crit"></a>
+        <a rel="me" href="https://toot.community/@crit" aria-label="Mastodon profile"></a>
         <style>
             @import url("fonts/roboto/stylesheet.css");
         </style>
+        <meta name="description" content="crit, Anton Bill Månsson personal page, low-level programming, RTOS, bare metal, StonX AB, dev at stonx.">
     </head>
 
     <body>
@@ -23,11 +24,11 @@
                         bleep.src = "/sounds/bleep.ogg"
                     </script>
                     <div style="padding-left: 10px; padding-bottom: 5px; align-items: center; display: flex;">
-                        <img src="images/favicon.png">
+                        <img src="images/favicon.png" alt="Photo of Crit.">
                         <h1 style="padding-left: 10px;">crit</h1>
                     </div>
                     <div class="roundbox">
-                        <h3 class="center">🔍 Socials</h3>
+                        <h2 class="center">🔍 Socials</h2>
                         <button class="button" onmouseenter="tick.play();" onclick="bleep.play(); window.open('https://toot.community/@crit','_blank')" type="button">
                             <i class="mastodon"></i> Fedi
                         </button>
