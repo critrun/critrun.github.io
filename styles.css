@@ -137,8 +137,8 @@ i {
     filter: brightness(0) invert(100%) drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.418));
 }
 
-.mastodon {
-    background: url('icons/mastodon.svg');
+.activitypub {
+    background: url('icons/activitypub.svg');
 }
 
 .kofi {
