@@ -156,3 +156,7 @@ i {
 .steam {
     background: url('icons/steam.svg');
 }
+
+.bsky {
+    background: url('icons/bluesky.svg')
+}
