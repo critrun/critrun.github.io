@@ -37,18 +37,22 @@ a {
     
 }
 
-#sidelamp {
+.hidden {
+    display: none;
+}
+
+#div_sidelamp {
     box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.623);
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.021);
-    background-image: url("images/bg-lq.webp");
+    background-image: url("images/bg-ulq.webp");
     background-size: cover;
 }
 
-#parallax {
+#div_parallax {
     margin: 0;
     position: relative;
-    background-image: url("images/bg-lq.webp");
+    background-image: url("images/bg-ulq.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-position: 50% 50%;
@@ -65,6 +69,17 @@ a {
     left: 0vw;
     width: 100vw;
     height: 100vh;
+}
+
+#div_pfp {
+    align-items: center; 
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    background-image: url("images/favicon-ulq.webp");
+    background-size: cover;
+    border-radius: 100%;
+    border: 2px solid #f0f8ff;
 }
 
 .sortbox {

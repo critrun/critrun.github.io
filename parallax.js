@@ -1,7 +1,7 @@
 (function() {
     // *Grabs mouse*, mine now MAWHAHAHAH
     document.addEventListener("mousemove", parallax);
-    const elem = document.querySelector("#parallax");
+    const elem = document.querySelector("#div_parallax");
     const elem1 = document.querySelector("#mover");
     // JIGGLYYYY!!
     function parallax(e) {
