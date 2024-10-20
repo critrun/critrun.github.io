@@ -27,13 +27,14 @@ h3 {
 p {
     color: #f0f8ff;
     font-size: medium;
-    font-family: Geneva, Verdana, sans-serif;
+    font-family: "Roboto", Geneva, Verdana, sans-serif;
+    font-style: normal;
 }
 
 a {
     color: rgb(142, 117, 209);
     font-size: large;
-    font-family: Geneva, Verdana, sans-serif;
+    font-family: "Roboto", Geneva, Verdana, sans-serif;
     
 }
 
@@ -41,22 +42,22 @@ a {
     display: none;
 }
 
-#div_sidelamp {
+.sidelamp {
     box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.623);
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.021);
-    background-image: url("images/bg-ulq.webp");
-    background-size: cover;
+    /*background-image: url("images/bg-ulq.webp");
+    background-size: cover;*/
 }
 
-#div_parallax {
+.parallax {
     margin: 0;
     position: relative;
     background-image: url("images/bg-ulq.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-position: 50% 50%;
-    background-size: auto 130%;
+    background-size: cover;
     width: auto;
     height: auto;
     border-radius: 25px;
@@ -82,12 +83,41 @@ a {
     border: 2px solid #f0f8ff;
 }
 
+#div_portfolio {
+    padding: 10px;
+    padding-bottom: 25px;
+}
+
 .sortbox {
-    width:0%;
     position: absolute;
     width: clamp(300px, 50%, 400px);
     top: 15%;
     left: calc(50% - clamp(300px, 50%, 400px)/2);
+}
+
+.articlebox {
+    position: relative;
+    width: clamp(25rem, calc(clamp(28rem, 90%, 63rem)*0.50 - 3rem), 30rem);
+    margin: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    top: 1.5rem;
+    display: inline-block;
+    text-align: left;
+    transition-duration: 300ms;
+}
+
+.articlebox:hover {
+    transform: scale(1.1);
+    transition-duration: 400ms;
+}
+
+.articlecollection {
+    width: clamp(28rem, 90%, 63rem);
+    height: auto;
+    margin: auto;
+    margin-top: 10vh;
+    text-align: center;
 }
 
 .roundbox {
@@ -99,6 +129,12 @@ a {
     border-radius: 25px;
     backdrop-filter: blur(5px);
     box-shadow: 0px -10px 7px -8px rgba(1, 18, 29, 0.671);
+}
+
+.shade {
+    background-color: #00000098;
+    display: flex;
+    border-radius: inherit;
 }
 
 .button {
@@ -154,24 +190,43 @@ i {
 
 .activitypub {
     background: url('icons/activitypub.svg');
+    height: 100%;
+    background-position: center;
 }
 
 .kofi {
     background: url('icons/kofi.svg');
+    height: 100%;
+    background-position: center;
 }
 
 .linkedin {
     background: url('icons/linkedin.svg');
+    height: 100%;
+    background-position: center;
 }
 
 .github {
     background: url('icons/github.svg');
+    height: 100%;
+    background-position: center;
 }
 
 .steam {
     background: url('icons/steam.svg');
+    height: 100%;
+    background-position: center;
 }
 
 .bsky {
-    background: url('icons/bluesky.svg')
+    background: url('icons/bluesky.svg');
+    height: 100%;
+    background-position: center;
+}
+
+.code {
+    background: url('icons/code.svg');
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
 }
