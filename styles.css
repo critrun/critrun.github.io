@@ -175,3 +175,7 @@ i {
 .bsky {
     background: url('icons/bluesky.svg')
 }
+
+.signal {
+    background: url('icons/signal.svg')
+}
