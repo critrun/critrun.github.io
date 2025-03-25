@@ -19,11 +19,33 @@
     </head>
 
     <body>
+
+        <button class="button" onclick="window.open('/portfolio/code.html','_self');" type="button" style="width: auto; margin: 1.5rem; position: fixed; z-index: 100; top: 0px; left: 0px;">
+            <i class="code"></i> Back
+        </button>
+
         <div class="article">
             <div class="articlehead" style="background-image: url('/images/cbt-tracker-lq.webp');"></div>
             <div class="articlebody">
                 <h1>Cookie Body Tracking</h1>
-                <p>I made stuff!! :></p>
+                <p>
+                    The project started with the idea of essentially making an improved AprilTag. This quickly led to simplification, 
+                    like using retro-reflectors and circles to improve accuracy and reliability. This still relied on only using 1 camera to track multiple 
+                    retro-reflector discs.
+                </p>
+                <p>
+                    One thing leads to the next and now the trackers are suddenly not just retro-reflectors but also includes an IMU and MCU. Using multiple 
+                    cameras they now triangulate the position of the tracker and use the IMU for orientation of the tracker.
+                </p>
+                <p>
+                    The project moves on to only relying on IMUs for simplicity, and for this good on device magnetometer calibration was one of the major challenges. 
+                    Competing projects like SlimeVR relied on the computation power of a desktop computer to calculate the soft- & hard-iron calibration. 
+                    After a while I managed with a lot of work run magnetometer calibration completely standalone on our horribly outdated MCU. 
+                    The fitting algorithm only took a couple of seconds to fit the calibration matrix deform to the 100 samples.
+                </p>
+                <p>
+                    Unfortunately due to monetary reasons the project failed to commercialize.
+                </p>
             </div>
         </div>
     </body>

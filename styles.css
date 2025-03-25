@@ -184,7 +184,7 @@ a {
     border-radius: 17.5px;
     transition-duration: 0.4s;
     margin-top: 5px;
-    z-index: 100;
+    z-index: -1;
 }
 
 .button:hover {
