@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="preload" as="style" href="styles.css" fetchpriority="high" onload="this.rel='stylesheet'">
+        <link rel="preload" as="style" href="/styles.css" fetchpriority="high" onload="this.rel='stylesheet'">
         <title>crit's crib</title>
         <link rel="icon" type="image/x-icon" href="/images/favicon-lq.webp">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <style rel="preload" fetchpriority="low">
-            @import url("fonts/roboto/stylesheet.css");
+            @import url("/fonts/roboto/stylesheet.css");
         </style>
-        <script type="text/javascript" src="scripts/helper.js"></script>
+        <script type="text/javascript" src="/scripts/helper.js"></script>
         <meta name="description" content="crit, Anton Bill Månsson personal page, low-level programming, RTOS, bare metal, StonX AB, dev at stonx.">
         <title>Crit's Code Portfolio</title>
         <meta content="Crit's Code Portfolio" property="og:title" />
         <meta content="Projects Crit has worked on." property="og:description" />
         <meta content="https://crit.run" property="og:url" />
-        <meta content="images/keyboard-lq.webp" property="og:image" />
+        <meta content="/images/keyboard-lq.webp" property="og:image" />
         <meta content="#b0cdd8" data-react-helmet="true" name="theme-color" />
         <meta name="twitter:card" content="summary_large_image">
     </head>
 
     <body>
         <div id="mover">
-            <script src="scripts/mover.js" fetchpriority="high"></script>
+            <script src="/scripts/mover.js" fetchpriority="high"></script>
 
             <div class="articlecollection">
 
-                <div class="articlebox">
-                    <div class="sidelamp parallax" id="div_cbt" style="background-image: url('images/keyboard-ulq.webp');">
-                        <script src="scripts/parallax.js" fetchpriority="high"></script>
-                        <img id="img_cbt" class="hidden" src="images/keyboard-lq.webp" onload="upgradeImage(this);" fetchpriority="low">
+                <div class="articlebox" onclick="window.open('code/cbt.html','_self');" type="button">
+                    <div class="sidelamp parallax" id="div_cbt" style="background-image: url('/images/cbt-tracker-ulq.webp');">
+                        <script src="/scripts/parallax.js" fetchpriority="high"></script>
+                        <img id="img_cbt" class="hidden" src="/images/cbt-tracker-lq.webp" onload="upgradeImage(this);" fetchpriority="low">
                         <div class="shade">
                             <div style="display:block; padding-left: 30px;">
                                 <h1>Cookie Body Tracking</h1>
-                                <p>This is gay</p>
+                                <p>Bare-metal firmware for mocap devices.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="articlebox">
-                    <div class="sidelamp parallax" id="div_deepslate" style="background-image: url('images/keyboard-ulq.webp');">
-                        <script src="scripts/parallax.js" fetchpriority="high"></script>
-                        <img id="img_deepslate" class="hidden" src="images/keyboard-lq.webp" onload="upgradeImage(this);" fetchpriority="low">
+                    <div class="sidelamp parallax" id="div_deepslate" style="background-image: url('/images/keyboard-ulq.webp');">
+                        <script src="/scripts/parallax.js" fetchpriority="high"></script>
+                        <img id="img_deepslate" class="hidden" src="/images/keyboard-lq.webp" onload="upgradeImage(this);" fetchpriority="low">
                         <div class="shade">
                             <div style="display:block; padding-left: 30px;">
-                                <h1>Deepslate</h1>
+                                <h1>This Website</h1>
                                 <p>This is gay2</p>
                             </div>
                         </div>
