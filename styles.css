@@ -230,3 +230,9 @@ i {
     height: 100%;
     background-position: center;
 }
+
+.signal {
+    background: url('icons/signal.svg');
+    height: 100%;
+    background-position: center;
+}
