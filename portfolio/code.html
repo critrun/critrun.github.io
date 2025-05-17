@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preload" as="style" href="/styles.css" fetchpriority="high" onload="this.rel='stylesheet'">
+        <title>crit's crib</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon-lq.webp">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <style rel="preload" fetchpriority="low">
+            @import url("/fonts/roboto/stylesheet.css");
+        </style>
+        <script type="text/javascript" src="/scripts/helper.js"></script>
+        <meta name="description" content="crit, Ronja Bill Månsson personal page, low-level programming, RTOS, bare metal, StonX AB, dev at stonx.">
+        <title>Crit's Code Portfolio</title>
+        <meta content="Crit's Code Portfolio" property="og:title" />
+        <meta content="Projects Crit has worked on." property="og:description" />
+        <meta content="https://crit.run" property="og:url" />
+        <meta content="/images/keyboard-lq.webp" property="og:image" />
+        <meta content="#b0cdd8" data-react-helmet="true" name="theme-color" />
+        <meta name="twitter:card" content="summary_large_image">
+    </head>
+
+    <body>
+
+        <button class="button" onclick="window.open('/','_self');" type="button" style="width: auto; margin: 1.5rem; position: fixed; z-index: 100; top: 0px; left: 0px;">
+            <i class="code"></i> Home
+        </button>
+
+        <div id="mover">
+            <script src="/scripts/mover.js" fetchpriority="high"></script>
+
+            <div class="articlecollection">
+
+                <div class="articlebox" onclick="window.open('code/cbt.html','_self');" type="button">
+                    <div class="sidelamp parallax" id="div_cbt" style="background-image: url('/images/cbt-tracker-ulq.webp');">
+                        <script src="/scripts/parallax.js" fetchpriority="high"></script>
+                        <img id="img_cbt" class="hidden" src="/images/cbt-tracker-lq.webp" onload="upgradeImage(this);" fetchpriority="low">
+                        <div class="shade">
+                            <div style="display:block; padding-left: 30px;">
+                                <h1>Cookie Body Tracking</h1>
+                                <p>Bare-metal firmware for mocap devices.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articlebox" onclick="window.open('code/website.html','_self');" type="button">
+                    <div class="sidelamp parallax" id="div_website" style="background-image: url('/images/website-card-ulq.webp');">
+                        <script src="/scripts/parallax.js" fetchpriority="high"></script>
+                        <img id="img_website" class="hidden" src="/images/website-card-lq.webp" onload="upgradeImage(this);" fetchpriority="low">
+                        <div class="shade">
+                            <div style="display:block; padding-left: 30px;">
+                                <h1>Personal Website</h1>
+                                <p>Personal website for linktree and portfolio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articlebox" onclick="window.open('code/frost.html','_self');" type="button">
+                    <div class="sidelamp parallax" id="div_frost" style="background-image: url('/images/keyboard-ulq.webp');">
+                        <script src="/scripts/parallax.js" fetchpriority="high"></script>
+                        <img id="img_frost" class="hidden" src="/images/keyboard-lq.webp" onload="upgradeImage(this);" fetchpriority="low">
+                        <div class="shade">
+                            <div style="display:block; padding-left: 30px;">
+                                <h1>Frost</h1>
+                                <p>WIP decentralized alternative to discord.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

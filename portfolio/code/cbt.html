@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preload" as="style" href="/styles.css" fetchpriority="high" onload="this.rel='stylesheet'">
+        <link rel="icon" type="image/x-icon" href="/images/favicon-lq.webp">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <style rel="preload" fetchpriority="low">
+            @import url("/fonts/roboto/stylesheet.css");
+        </style>
+        <script type="text/javascript" src="/scripts/helper.js"></script>
+        <title>Crit's work on Cookie Body Tracking</title>
+        <meta content="Crit's work on Cookie Body Tracking" property="og:title" />
+        <meta name="description" content="Bare-metal firmware for mocap devices.">
+        <meta content="Bare-metal firmware for mocap devices." property="og:description" />
+        <meta content="https://crit.run" property="og:url" />
+        <meta content="/images/cbt-tracker-lq.webp" property="og:image" />
+        <meta content="#b0cdd8" data-react-helmet="true" name="theme-color" />
+        <meta name="twitter:card" content="summary_large_image">
+    </head>
+
+    <body>
+
+        <button class="button" onclick="window.open('/portfolio/code.html','_self');" type="button" style="width: auto; margin: 1.5rem; position: fixed; z-index: 100; top: 0px; left: 0px;">
+            <i class="code"></i> Back
+        </button>
+
+        <div class="article">
+            <div class="articlehead" style="background-image: url('/images/cbt-tracker-lq.webp');"></div>
+            <div class="articlebody">
+                <h1>Cookie Body Tracking</h1>
+                <p>
+                    The project started with the idea of essentially making an improved AprilTag. This quickly led to simplification, 
+                    like using retro-reflectors and circles to improve accuracy and reliability. This still relied on only using 1 camera to track multiple 
+                    retro-reflector discs.
+                </p>
+                <p>
+                    One thing leads to the next and now the trackers are suddenly not just retro-reflectors but also includes an IMU and MCU. Using multiple 
+                    cameras they now triangulate the position of the tracker and use the IMU for orientation of the tracker.
+                </p>
+                <p>
+                    The project moves on to only relying on IMUs for simplicity, and for this good on device magnetometer calibration was one of the major challenges. 
+                    Competing projects like SlimeVR relied on the computation power of a desktop computer to calculate the soft- & hard-iron calibration. 
+                    After a while I managed with a lot of work run magnetometer calibration completely standalone on our horribly outdated MCU. 
+                    The fitting algorithm only took a couple of seconds to fit the calibration matrix deform to the 100 samples.
+                </p>
+                <p>
+                    Unfortunately due to monetary reasons the project failed to commercialize.
+                </p>
+                <p>
+                    For this project I managed the team as well as programming firmware, researching algorithms, produced the picture and video content, design work as well as community management.
+                </p>
+                <p>
+                    For a more detailed overview of the project <a href="https://stonx.io/feed/2023-04-28-StonX-CBT---Cookie-Body-Tracking" target="_blank">read this article</a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

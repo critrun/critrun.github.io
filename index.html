@@ -15,11 +15,12 @@
         <!--<link rel="preload" fetchpriority="high" as="image" href="icons/kofi.svg">
         <link rel="preload" fetchpriority="high" as="image" href="icons/linkedin.svg">-->
         <link rel="preload" fetchpriority="high" as="image" href="icons/steam.svg">
+        <link rel="preload" fetchpriority="high" as="image" href="icons/code.svg">
         <style rel="preload" fetchpriority="low">
             @import url("fonts/roboto/stylesheet.css");
         </style>
-        <script type="text/javascript" src="helper.js"></script>
-        <meta name="description" content="crit, Anton Bill Månsson personal page, low-level programming, RTOS, bare metal, StonX AB, dev at stonx.">
+        <script type="text/javascript" src="scripts/helper.js"></script>
+        <meta name="description" content="crit, Ronja Bill Månsson personal page, low-level programming, RTOS, bare metal, StonX AB, dev at stonx.">
         <title>Crit's Link Tree</title>
         <meta content="Crit's Link Tree on da Webs!!" property="og:title" />
         <meta content="Welcome to the all beautiful webbed site of the crit!" property="og:description" />
@@ -31,11 +32,11 @@
 
     <body>
         <div id="mover">
-            <div class="sortbox", id="div_sidelamp" fetchpriority="high" rel="preload">
-                <img id="img_sidelamp" class="hidden" src="images/bg-lq.webp" onload="upgradeImage(this);" fetchpriority="low">
-                <div id="div_parallax">
-                    <img id="img_parallax" class="hidden" src="images/bg-lq.webp" onload="upgradeImage(this);" fetchpriority="low">
-                    <script src="/parallax.js" fetchpriority="high"></script>
+            <script src="scripts/mover.js" fetchpriority="high"></script>
+            <div class="sidelamp sortbox">
+                <div class="parallax" id="div_main">
+                    <script src="scripts/parallax.js" fetchpriority="high"></script>
+                    <img id="img_main" class="hidden" src="images/bg-lq.webp" onload="upgradeImage(this);" fetchpriority="low">
                     <div style="padding-left: 10px; padding-bottom: 5px; align-items: center; display: flex;">
                         <div id="div_pfp">
                             <img id="img_pfp" class="hidden" src="images/favicon-lq.webp" onload="upgradeImage(this);" fetchpriority="low" alt="Photo of Crit.">
@@ -58,6 +59,12 @@
                         </button>
                         <button class="button" onclick="window.open('https://signal.me/#eu/hFQC1jV0ziuUDJpP-8-kD6rRxJyE_yy9I1Th5956xVVdmyEIps1IXqSLWSvBeXpD','_blank');" type="button">
                             <i class="signal"></i> Signal
+                        </button>
+                    </div>
+                    <div id="div_portfolio">
+                        <h2 class="center">👔 Portfolio</h2>
+                        <button class="button" onclick="window.open('/portfolio/code.html','_self');" type="button">
+                            <i class="code"></i> Code
                         </button>
                     </div>
                 </div>
