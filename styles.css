@@ -106,9 +106,12 @@ a {
 }
 
 .sortbox {
-    position: absolute;
+    position: relative;
     width: clamp(300px, 50%, 400px);
-    top: 15%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     left: calc(50% - clamp(300px, 50%, 400px)/2);
 }
 
@@ -275,10 +278,11 @@ i {
     overflow: hidden;
 
     /*width: clamp(300px, 50%, 400px);*/
-    background:#00000000;
+    background: #00000000;
 
     border-radius: 2rem;
     margin: 1rem;
+    margin-left: 3rem;
     box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.623);
     transition-duration: 200ms;
 }
