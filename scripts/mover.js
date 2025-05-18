@@ -1,7 +1,10 @@
 (function() {
     // *Grabs mouse*, mine now MAWHAHAHAH
     document.addEventListener("mousemove", mover);
-    const elem = document.querySelector("#mover");
+    var elem = document.querySelector("#mover");
+    if (!elem) {
+        elem = document.querySelector("#mover-scroll");
+    }
     // JIGGLYYYY!!
     function mover(e) {
         let _w = window.innerWidth/2;
