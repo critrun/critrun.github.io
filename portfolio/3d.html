@@ -19,8 +19,7 @@
         <meta name="twitter:card" content="summary_large_image">
     </head>
 
-    <script src="/scripts/masonry.js"></script>
-    <script src="/scripts/imagesloaded.js"></script>
+    <script src="/scripts/media-modal.js"></script>
 
     <body>
 
@@ -30,6 +29,11 @@
 
         <div id="mover-scroll">
             <script src="/scripts/mover.js" fetchpriority="high"></script>
+
+            <div id="media-modal" class="hidden media-modal">
+            <span id="modal-close" class="modal-close">&times;</span>
+            <div id="modal-content" class="modal-content rounded"></div>
+            </div>
 
             <div id="media-container" class="articlecollection">Loading...</div>
             <script src="/scripts/media-lister.js"></script>
