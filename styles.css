@@ -47,7 +47,6 @@ a {
 
 .rounded {
     border-radius: 2rem;
-    overflow: hidden;
 }
 
 .sidelamp {
@@ -67,7 +66,7 @@ a {
     background-size: cover;
     width: auto;
     height: auto;
-    /*border-radius: 25px;*/
+    border-radius: inherit;
 }
 
 #mover {
@@ -301,6 +300,7 @@ i {
     text-align: center;
     line-height: 20em;
     color: #dfeff5;
+    overflow: hidden;
 }
 
 .media-modal {
