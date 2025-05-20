@@ -22,12 +22,7 @@ function loadMediaGallery(jsonPath) {
         wrapper2.classList.add('rounded');
 
 
-        let element;
-
         if (['mp4', 'webm', 'ogg'].includes(ext)) {
-          element = document.createElement('video');
-          element.controls = true;
-          element.poster = media_path+'/tn/'+name+'.webp';
           wrapper.style.backgroundImage = 'url("'+media_path+'/tn/'+name+'.webp'+'")';
           const play_triangle = document.createElement("span");
           play_triangle.textContent = "\u2023";
@@ -35,8 +30,13 @@ function loadMediaGallery(jsonPath) {
           play_triangle.style.textShadow = "0px 0px 0.05em rgba(81,98,104,0.51)"
           wrapper.appendChild(play_triangle);
         } else if (['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(ext)) {
-          element = document.createElement('img');
-          wrapper.style.background = 'url("'+media_path+'/'+file+'")';
+          wrapper.fetchPriority = "high";
+          var lq_im = document.createElement('img');
+          lq_im.classList.add("upgradeImage");
+          lq_im.src = media_path+'/lq/'+file;
+          lq_im.fetchPriority = "high";
+          lq_im.setAttribute("onload", "upgradeImage(this, '"+media_path+'/'+file+"')");
+          wrapper.appendChild(lq_im);
         }
 
         wrapper.style.backgroundRepeat = 'no-repeat';
@@ -45,10 +45,7 @@ function loadMediaGallery(jsonPath) {
         parallax.src='/scripts/parallax.js';
         wrapper.appendChild(parallax);
 
-        if (element) {
-          element.src = media_path+'/'+file;
-          element.classList.add('media-item');
-          //wrapper.appendChild(element);
+        if (wrapper) {
           wrapper2.appendChild(wrapper);
           container.appendChild(wrapper2);
         }

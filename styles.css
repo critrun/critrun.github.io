@@ -61,7 +61,6 @@ a {
 .parallax {
     margin: 0;
     position: relative;
-    background-image: url("images/bg-ulq.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-position: 50% 50%;
@@ -90,7 +89,7 @@ a {
     height: auto;
 }
 
-#div_pfp {
+.div_pfp {
     align-items: center;
     display: flex;
     width: 4rem;
@@ -341,6 +340,10 @@ body.modal-open {
 }
 
 .hidden {
+    display: none;
+}
+
+.upgradeImage {
     display: none;
 }
 
