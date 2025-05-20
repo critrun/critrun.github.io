@@ -33,13 +33,13 @@
     <body>
         <div id="mover">
             <script src="scripts/mover.js" fetchpriority="high"></script>
-            <div class="sidelamp sortbox">
-                <div class="parallax" id="div_main">
+            <div class="sidelamp sortbox rounded">
+                <div class="parallax" style="background-image: url(/images/bg-ulq.webp);">
                     <script src="scripts/parallax.js" fetchpriority="high"></script>
-                    <img id="img_main" class="hidden" src="images/bg-lq.webp" onload="upgradeImage(this);" fetchpriority="low">
+                    <img class="upgradeImage" src="/images/bg-ulq.webp" onload="upgradeImage(this, '/images/bg-lq.webp');" fetchpriority="low">
                     <div style="padding-left: 10px; padding-bottom: 5px; align-items: center; display: flex;">
-                        <div id="div_pfp">
-                            <img id="img_pfp" class="hidden" src="images/favicon-lq.webp" onload="upgradeImage(this);" fetchpriority="low" alt="Photo of Ronja.">
+                        <div class="div_pfp" style="background-image: url(images/favicon-ulq.webp);">
+                            <img class="upgradeImage" src="/images/favicon-ulq.webp" onload="upgradeImage(this, '/images/favicon-lq.webp');" fetchpriority="low" alt="Photo of Ronja.">
                         </div>
                         <h1 style="padding-left: 10px;">Ronja</h1>
                     </div>
