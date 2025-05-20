@@ -325,6 +325,10 @@ i {
     line-height: 0px;
 }
 
+.modal-content {
+    line-height: 0px;
+}
+
 .modal-close {
     position: absolute;
     top: 1rem;
