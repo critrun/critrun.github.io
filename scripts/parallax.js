@@ -2,7 +2,9 @@
     const parallax_scale = 1.2;
 
     // *Grabs mouse*, mine now MAWHAHAHAH
-    document.addEventListener("mousemove", parallax);
+    if (!window.mobileAndTabletCheck()) {
+        document.addEventListener("mousemove", parallax);
+    }
     const elems = document.querySelectorAll(".parallax");
     let newImg = [];
     let scales = [];

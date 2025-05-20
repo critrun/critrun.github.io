@@ -1,6 +1,8 @@
 (function() {
     // *Grabs mouse*, mine now MAWHAHAHAH
-    document.addEventListener("mousemove", mover);
+    if (!window.mobileAndTabletCheck()) {
+        document.addEventListener("mousemove", mover);
+    }
     var elem = document.querySelector("#mover");
     if (!elem) {
         elem = document.querySelector("#mover-scroll");
