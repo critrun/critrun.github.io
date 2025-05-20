@@ -327,6 +327,7 @@ i {
 
 .modal-content {
     line-height: 0px;
+    overflow: hidden;
 }
 
 .modal-close {
