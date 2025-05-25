@@ -36,7 +36,9 @@ function _upgradeImage(object, hq_src) {
         // upgrade all images
         for (let i = 0; i < all_imgs.length; i++) {
             // load hq image for all
-            all_imgs[i].src = all_imgs[i].innerHTML;
+            var funcString = all_imgs[i].attributes.getNamedItem("onload").value.replace(" ", "").replace("'", '"');
+            var path = funcString.slice(funcString.indexOf(',"')+2, funcString.indexOf("')"));
+            all_imgs[i].src = path;
         }
     }
 }
