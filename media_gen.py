@@ -13,8 +13,6 @@ for mediapath in mediapaths:
     
     # Generate new low-quality
     files = [f for f in listdir(mediapath) if isfile(join(mediapath, f)) and not ".json" in f]
-    onlyfiles = str([f for f in listdir(mediapath) if isfile(join(mediapath, f)) and not ".json" in f]).replace(" ","").replace("[", "[\n    ").replace(",",",\n    ").replace("]","\n]").replace("'", '"')
-    open(f"{mediapath}/media.json", "w+", encoding="utf-8").write(onlyfiles)
     for file in files:
         try:
             im = cv2.imread(join(mediapath, file))
@@ -33,3 +31,5 @@ for mediapath in mediapaths:
         except Exception as e:
             print(e)
             pass
+    onlyfiles = str([f for f in listdir(mediapath) if isfile(join(mediapath, f)) and not ".json" in f]).replace(" ","").replace("[", "[\n    ").replace(",",",\n    ").replace("]","\n]").replace("'", '"')
+    open(f"{mediapath}/media.json", "w+", encoding="utf-8").write(onlyfiles)
